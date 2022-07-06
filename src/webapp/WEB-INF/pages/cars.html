@@ -14,10 +14,10 @@
         <th>SERIES</th>
         <th>COLOR</th>
     </tr>
-    <tr th:each="el : ${list}">
-        <td th:text="${el.model()}"></td>
-        <td th:text="${el.series()}"></td>
-        <td th:text="${el.color()}"></td>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.series}"></td>
+        <td th:text="${car.color}"></td>
     </tr>
 </table>
 </body>
